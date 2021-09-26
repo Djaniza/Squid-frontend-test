@@ -1,0 +1,17 @@
+$fontsFolderPath: '~@squidit/css/dist/fonts';
+@import '~@squidit/css/src/scss/squid.scss';
+
+.img-fluid {
+  margin: 10px;
+  width: 35%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box img {
+  max-width: 100%;
+}
