@@ -37,8 +37,7 @@ function Main() {
         <img className="img-fluid" src={ logo } alt="squid-logo" />
       </header>
       <main className="container">
-        { data.map((insta) => {
-          return (
+        { data.map((insta) => (
           <Card
             key={ uuidv4() }
             image={ insta.imagens.thumbnail.url }
@@ -48,7 +47,7 @@ function Main() {
             comentarios={ insta.comentarios }
             calendar={ insta.criadoEm }
           />
-        )})}
+        ))}
       </main>
     </>
   );
