@@ -9,14 +9,19 @@ function Main() {
 
   if (!data.length) {
     return(
-      <div className="progress">
-        <div
-          className="progress-bar background-dashed animate-bar"
-          role="progressbar"
-          aria-valuemin="0"
-          aria-valuemax="80"
-  ></div>
-      </div>
+      <>
+        <header>
+          <img className="img-fluid" src={ logo } alt="squid-logo" />
+        </header>
+        <div className="progress">
+          <div
+            className="progress-bar background-dashed animate-bar"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="80"
+          ></div>
+        </div>
+      </>
     );
   }
 
@@ -25,7 +30,7 @@ function Main() {
       <header>
         <img className="img-fluid" src={ logo } alt="squid-logo" />
       </header>
-      <main className="container-fluid">
+      <main className="container">
         { data.map((insta) => {
           return (
           <Card

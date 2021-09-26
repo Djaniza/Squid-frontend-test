@@ -12,6 +12,16 @@ header {
   width: 100%;
 }
 
-.box img {
+.box {
   max-width: 100%;
+}
+
+.fit-image {
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+.ajusting {
+  margin: 0 5% 0 5%;
 }
